@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:ignore="UnusedAttribute"-->
+<!--    android:id="@+id/email_frame"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_marginVertical="2dp"-->
+<!--    android:layout_marginHorizontal="4dp"-->
+<!--    android:background="?attr/colorSecondary">-->
+    
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container_material_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="15dp">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp">
+            
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/banner_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ImageView.Round"/>
+            
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:paddingHorizontal="15dp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:ellipsize="end"/>
+        
+            <TextView
+                android:id="@+id/author_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"/>
+        
+        </LinearLayout>
+        
+    </com.google.android.material.card.MaterialCardView>
+
+<!--</FrameLayout>-->

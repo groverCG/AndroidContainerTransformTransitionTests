@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <OutputType>Exe</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationId>com.companyname.ContainerTransformTicketExample</ApplicationId>
+        <ApplicationVersion>1</ApplicationVersion>
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.7" />
+      <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.1.4.10" />
+      <PackageReference Include="Xamarin.AndroidX.ConstraintLayout.Core" Version="1.0.4.10" />
+      <PackageReference Include="Xamarin.AndroidX.ConstraintLayout.Solver" Version="2.0.4.18" />
+      <PackageReference Include="Xamarin.AndroidX.Core" Version="1.12.0.4" />
+      <PackageReference Include="Xamarin.AndroidX.Fragment" Version="1.6.2.2" />
+      <PackageReference Include="Xamarin.Google.Android.Material" Version="1.10.0.3" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <AndroidResource Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <TransformFile Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <AndroidLibrary Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <AndroidNativeLibrary Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <JavaSourceJar Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <AndroidJavaSource Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <AndroidAarLibrary Remove="Resources\layout-land\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Resources\layout-land\**" />
+    </ItemGroup>
+</Project>
